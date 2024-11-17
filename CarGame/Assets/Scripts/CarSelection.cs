@@ -45,6 +45,7 @@ public class CarSelection : MonoBehaviour
             actionButton.onClick.RemoveAllListeners();
             actionButton.onClick.AddListener(SelectCar);
             price.text = "";
+            actionButton.interactable = true;
         }
         else{
             actionButton.GetComponentInChildren<Text>().text = "Satın Al";

@@ -363,6 +363,7 @@
 "Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CarSelection.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GameManager1.cs"
 "Assets/Scripts/NewGame.cs"
 "Assets/Scripts/sceneManager.cs"
 "Assets/Scripts/SceneSelector.cs"
