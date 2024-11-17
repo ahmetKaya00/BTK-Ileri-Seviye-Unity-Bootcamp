@@ -80,7 +80,7 @@ public class AudioManager : MonoBehaviour
     }
 
     private void OnApplicationQuit() {
-        PlayerPrefs.SetFloat("bgMusicVolume", bgMusicVolume);
+        PlayerPrefs.SetFloat("BGMusicVolume", bgMusicVolume);
         PlayerPrefs.SetFloat("SFXVolume",sfxSourceVolume);
         PlayerPrefs.Save();
     }
