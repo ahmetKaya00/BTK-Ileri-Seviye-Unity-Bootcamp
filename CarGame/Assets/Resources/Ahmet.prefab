@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 2792218741957914664}
   - component: {fileID: 7495443279060062592}
   - component: {fileID: 4590482947828494900}
+  - component: {fileID: 297199865982825094}
   m_Layer: 0
   m_Name: Ahmet
   m_TagString: Untagged
@@ -568,6 +569,29 @@ MonoBehaviour:
   frontRightWhellCollider: {fileID: 4795950753765878369}
   rearLeftWhellCollider: {fileID: 3145262460232535540}
   rearRightWhellCollider: {fileID: 1057494946909100755}
+  maxSteerAngle: 45
+  motorForce: 1500
+  brakeForce: 3000
+  decelarationForce: 100
+  reverseForce: 1000
+  stopThreshold: 1
+  flipThresholdAngle: 45
+  steeringWheel: {fileID: 0}
+--- !u!114 &297199865982825094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311311803080157842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac6ffa4652054261bfbc370cb97bb7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasFinished: 0
+  finishTime: 0
+  rb: {fileID: 0}
 --- !u!1 &3962000127133956386
 GameObject:
   m_ObjectHideFlags: 0
