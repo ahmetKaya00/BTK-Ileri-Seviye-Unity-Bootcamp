@@ -36,8 +36,8 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.tag == "ColorChanger"){
             RandomColor();
-            collider.gameObject.transform.position = transform.position + new Vector3(0f,11f,0f);
-            bir.gameObject.transform.position = transform.position + new Vector3(0f,16f,0f);
+            collider.gameObject.transform.position = transform.position + new Vector3(0f,13f,0f);
+            bir.gameObject.transform.position = transform.position + new Vector3(0f,10f,0f);
             deger++;
             number++;
             PScore.text = number.ToString();
@@ -49,8 +49,8 @@ public class Player : MonoBehaviour
         }
         if(collider.tag == "Respawn"){
             RandomColor();
-            collider.gameObject.transform.position = transform.position + new Vector3(0f,11f,0f);
-            bir.gameObject.transform.position = transform.position + new Vector3(0f,16f,0f);
+            collider.gameObject.transform.position = transform.position + new Vector3(0f,13f,0f);
+            iki.gameObject.transform.position = transform.position + new Vector3(0f,10f,0f);
             deger++;
             number++;
             PScore.text = number.ToString();
@@ -72,19 +72,19 @@ public class Player : MonoBehaviour
         switch(index){
             case 0:
                 CurrentColor = "Turkuaz";
-                sr.color = ColorTur;
+                sr.color = new Color(ColorTur.r,ColorTur.g,ColorTur.b,1f);
                 break;
             case 1:
                 CurrentColor = "Sari";
-                sr.color = ColorSari;
+                sr.color = new Color(ColorSari.r,ColorSari.g,ColorSari.b,1f);
                 break;
             case 2:
                 CurrentColor = "Kirmizi";
-                sr.color = ColorKir;
+                sr.color = new Color(ColorKir.r,ColorKir.g,ColorKir.b,1f);
                 break;
             case 3:
                 CurrentColor = "Mor";
-                sr.color= ColorMor;
+                sr.color= new Color(ColorMor.r,ColorMor.g,ColorMor.b,1f);
                 break;
         }
     }
